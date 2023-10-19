@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mochila img{
+    height: 40px;
+    cursor: pointer;
+}
+
+header .container{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+
+    color: white;
+
+    height: 70px;
+
+    border-bottom: 1px solid black;
+}
+
+.dinheiro{
+    font-size: 40px;
+    color: black;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container{
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px 20px;
+
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.supermercado{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-compra{
+    width: 100%;
+    padding: 10px;
+
+    border: none;
+    background-color: black;
+    border-radius: 6px;
+    color: white;
+
+    cursor: pointer;
+}
+
+.button-compra:hover{
+    opacity: 0.7;
+}
+
+.maismenos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.maismenos button{
+    width: 20px;
+    font-size: 17px;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: black;
+    color: white;
+}
+
+.maismenos button:hover{
+    opacity: 0.7;
+}
+
+.precoQntd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
