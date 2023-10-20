@@ -86,11 +86,14 @@ function renderShop() {
         btn.addEventListener("click", (event) => {
             event.preventDefault();
 
-            handleCompra(e, qntd);
+            if(e.qntd > 0){
+                handleCompra(e, qntd);
+            }
         })
 
         btn.innerText = "Comprar"
         btn.className = "button-compra"
+        btn.disabled = e.qntd > 0 ? false : true
 
         maismenos.className = "maismenos"
         if(e.qntd > 0){
